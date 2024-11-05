@@ -1,0 +1,107 @@
+﻿<Page x:Class="MetodosApp.Pages.PanelMath"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MetodosApp.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" 
+      d:DesignWidth="800"
+      Title="PanelMath"
+      Background="Transparent">
+
+    <Grid>
+        <DockPanel>
+            <StackPanel DockPanel.Dock="Top"
+                        Orientation="Horizontal"
+                        Background="Transparent"
+                        Margin="0,0,0,10">
+
+
+                <StackPanel Orientation="Vertical"
+                            Margin="10,0,0,0">
+                    <Label Content="Xi"></Label>
+                    <TextBox Name="txt_Xi"
+                             Height="30"
+                             Width="50"
+                             FontSize="15"
+                             VerticalContentAlignment="Center">
+
+                    </TextBox>
+                </StackPanel>
+
+                <StackPanel Orientation="Vertical"
+                            Margin="10,0,0,0">
+                    <Label Content="Xd"></Label>
+                    <TextBox Name="txt_Xd"
+                             Height="30"
+                             Width="50"
+                             FontSize="15"
+                             VerticalContentAlignment="Center">
+
+                    </TextBox>
+                </StackPanel>
+
+                <StackPanel Orientation="Vertical"
+                            Margin="10,0,0,0">
+                    <Label Content="TOL"></Label>
+                    <TextBox Name="txt_Tol"
+                             Height="30"
+                             Width="50"
+                             FontSize="15"
+                             VerticalContentAlignment="Center">
+
+                    </TextBox>
+                </StackPanel>
+
+                <StackPanel Orientation="Vertical"
+                            Margin="10,0,0,0">
+                    <Label Content="N"></Label>
+                    <TextBox Name="txt_N"
+                            Height="30"
+                             Width="50"
+                             Text="20"
+                             IsReadOnly="True"
+                             IsEnabled="False"
+                             FontSize="15"
+                             VerticalContentAlignment="Center">
+
+                    </TextBox>
+                </StackPanel>
+
+                <StackPanel>
+                    <Label>Calcular</Label>
+                    <Button Name="btn_Values"
+                        Content="CALCULAR"
+                        Height="30"
+                        Width="70"
+                        Margin="10,0,0,0" Click="btn_Values_Click">
+
+                    </Button>
+                </StackPanel>
+            </StackPanel>
+
+            <DataGrid Name="DG_Data"
+                      DockPanel.Dock="Top"
+                      AutoGenerateColumns="False"
+                      CanUserSortColumns="False"
+                      ColumnWidth="*"
+                      HorizontalContentAlignment="Stretch"
+                      VerticalContentAlignment="Stretch" 
+                      CanUserReorderColumns="False" 
+                      CanUserResizeColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Xi" Binding="{Binding Xi}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Xd" Binding="{Binding Xd}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Xm" Binding="{Binding Xm}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="X2" Binding="{Binding X2}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="FXI" Binding="{Binding FXI}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="dFXi" Binding="{Binding dFXI}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="FXD" Binding="{Binding FXD}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="FXM" Binding="{Binding FXM}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="FXixFXM" Binding="{Binding FXIxFXM}"></DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </DockPanel>
+    </Grid>
+</Page>

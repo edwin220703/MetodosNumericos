@@ -1,0 +1,67 @@
+﻿<Window x:Class="MetodosApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MetodosApp"
+        mc:Ignorable="d"
+        Title="Metodos Numericos - Edwin - Florangel" 
+        Height="450" 
+        Width="800">
+    <Grid Background="#f1f6ce">
+        <DockPanel>
+            <!--NAVBAR-->
+            
+            <!--SIDEBAR-->
+            <StackPanel DockPanel.Dock="Left"
+                        Name="sp_SideBar"
+                        Width="200"
+                        Background="#036564">
+
+                <Button Name="btn_Biseccion"
+                        Content="Biseccion"
+                        Height="50" 
+                        Click="btn_Options_Click"
+                        Style="{DynamicResource ButtonStyle1}">
+                </Button>
+                <Button  Name="btn_ReglaFalsa"
+                         Style="{DynamicResource ButtonStyle1}"
+                        Content="Regla Falsa"
+                        Height="50"
+                        Click="btn_Options_Click">
+
+                </Button>
+                <Button Name="btn_Secante"
+                        Content="Secante"
+                        Height="50"
+                        Click="btn_Options_Click"
+                        Style="{DynamicResource ButtonStyle1}">
+
+                </Button>
+                <Button Name="btn_Newton"
+                        Content="Newton"
+                        Height="50"
+                        Click="btn_Options_Click"
+                        Style="{DynamicResource ButtonStyle1}">
+
+                </Button>
+            </StackPanel>
+            
+            <!--FOOTER-->
+            <Grid DockPanel.Dock="Bottom"
+                  Height="40"
+                  Background="#036564">
+            </Grid>
+            
+            
+            <!--SECTION-->
+            <StackPanel DockPanel.Dock="Right"
+                  Name="gd_Section">
+                <Frame Name="panel_General"
+                       NavigationUIVisibility="Hidden">
+
+                </Frame>
+            </StackPanel>
+        </DockPanel>
+    </Grid>
+</Window>
