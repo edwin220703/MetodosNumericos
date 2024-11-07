@@ -91,10 +91,16 @@ namespace MetodosApp.Pages
 
             try
             {
+                if(txt_Xi.Text == string.Empty && txt_Xd.Text == string.Empty && txt_Tol.Text == string.Empty)
+                {
+                    MessageBox.Show("Debe Llenar los campos especificados");
+                    return false;
+                }
+                    
                 //TOLERANCIA
                 if (!r.IsMatch(txt_Tol.Text))
                 {
-                    MessageBox.Show("La tolerancia debe ser numero entero o decimal", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show("La tolerancia debe ser numero entero o decimal positivo", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                     return false;
                 }
 
