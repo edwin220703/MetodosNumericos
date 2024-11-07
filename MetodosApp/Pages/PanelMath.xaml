@@ -81,6 +81,25 @@
                 </StackPanel>
             </StackPanel>
 
+            <StackPanel Orientation="Horizontal"
+                        DockPanel.Dock="Top"
+                        Background="Transparent"
+                        Margin="0,10,0,10">
+                
+                <Label Name="lb_Raiz"
+                       Foreground="Red"
+                       FontSize="12"
+                       Content="">
+                    
+                </Label>
+                <Label Name="lb_ValorRaiz"
+                       Foreground="Red"
+                       FontSize="12"
+                       Content="">
+                    
+                </Label>
+            </StackPanel>
+
             <DataGrid Name="DG_Data"
                       DockPanel.Dock="Top"
                       AutoGenerateColumns="False"
@@ -89,8 +108,11 @@
                       HorizontalContentAlignment="Stretch"
                       VerticalContentAlignment="Stretch" 
                       CanUserReorderColumns="False" 
-                      CanUserResizeColumns="False">
+                      CanUserResizeColumns="False"
+                      VerticalScrollBarVisibility="Visible"
+                      HorizontalScrollBarVisibility="Auto">
                 <DataGrid.Columns>
+                    <DataGridTextColumn Header="N" Binding="{Binding N}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Xi" Binding="{Binding Xi}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Xd" Binding="{Binding Xd}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Xm" Binding="{Binding Xm}"></DataGridTextColumn>

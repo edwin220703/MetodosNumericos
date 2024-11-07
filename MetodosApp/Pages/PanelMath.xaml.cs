@@ -47,29 +47,30 @@ namespace MetodosApp.Pages
             {
                 case "btn_Biseccion":
                     {
-                        DG_Data.Columns[3].Visibility = Visibility.Collapsed;
-                        DG_Data.Columns[5].Visibility = Visibility.Collapsed;
+                        DG_Data.Columns[4].Visibility = Visibility.Collapsed;
+                        DG_Data.Columns[6].Visibility = Visibility.Collapsed;
                     }; break;
                 case "btn_ReglaFalsa":
                     {
-                        DG_Data.Columns[3].Visibility = Visibility.Collapsed;
-                        DG_Data.Columns[5].Visibility = Visibility.Collapsed;
+                        DG_Data.Columns[4].Visibility = Visibility.Collapsed;
+                        DG_Data.Columns[6].Visibility = Visibility.Collapsed;
                     }; break;
                 case "btn_Secante":
                     {
-                        DG_Data.Columns[2].Visibility = Visibility.Collapsed;
-                        DG_Data.Columns[5].Visibility = Visibility.Collapsed;
-                        DG_Data.Columns[7].Visibility = Visibility.Collapsed;
+                        DG_Data.Columns[3].Visibility = Visibility.Collapsed;
+                        DG_Data.Columns[6].Visibility = Visibility.Collapsed;
+                        DG_Data.Columns[8].Visibility = Visibility.Collapsed;
+                        DG_Data.Columns[9].Visibility = Visibility.Collapsed;
                     }; break;
                 case "btn_Newton":
                     {
                         txt_Xd.IsEnabled = false;
-                        DG_Data.Columns[1].Visibility = Visibility.Collapsed;
                         DG_Data.Columns[2].Visibility = Visibility.Collapsed;
-                        DG_Data.Columns[6].Visibility = Visibility.Collapsed;
+                        DG_Data.Columns[3].Visibility = Visibility.Collapsed;
                         DG_Data.Columns[7].Visibility = Visibility.Collapsed;
                         DG_Data.Columns[8].Visibility = Visibility.Collapsed;
-                        
+                        DG_Data.Columns[9].Visibility = Visibility.Collapsed;
+
                     }; break;
                 default:
                     {
@@ -91,19 +92,21 @@ namespace MetodosApp.Pages
             try
             {
                 //TOLERANCIA
-                if (Convert.ToDouble(txt_Tol.Text) < 0 && !r.IsMatch(txt_Tol.Text))
+                if (!r.IsMatch(txt_Tol.Text))
                 {
-                    MessageBox.Show("La tolerancia debe ser numero positivo", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show("La tolerancia debe ser numero entero o decimal", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                     return false;
                 }
 
                 //XI y XD
-                if (Convert.ToDouble(txt_Xi.Text) >= Convert.ToDouble(txt_Xd.Text) && optionServices != "btn_Newton")
+                if (optionServices != "btn_Newton")
                 {
-                    MessageBox.Show("El rango inicial (Xi) debe ser menor al rango mayor (Xd)", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-                    return false;
+                    if (Convert.ToDouble(txt_Xi.Text) >= Convert.ToDouble(txt_Xd.Text))
+                    {
+                        MessageBox.Show("El rango inicial (Xi) debe ser menor al rango mayor (Xd)", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                        return false;
+                    }
                 }
-
 
                 //ITERACION
                 r = new Regex(pathIntegrel);
@@ -126,18 +129,16 @@ namespace MetodosApp.Pages
         private void btn_Values_Click(object sender, RoutedEventArgs e)
         {
             if (!VerificarDatos())
-            {
-                MessageBox.Show("Verificar los campos nuevamente");
-            }
+                return;
 
             try
             {
-                xi = Convert.ToDouble(txt_Xi.Text);
+                xi = Convert.ToDouble(txt_Xi.Text.Trim());
 
                 if (optionServices != "btn_Newton")
-                    xd = Convert.ToDouble(txt_Xd.Text);
+                    xd = Convert.ToDouble(txt_Xd.Text.Trim());
 
-                tol = Convert.ToDouble(txt_Tol.Text);
+                tol = Math.Abs(Convert.ToDouble(txt_Tol.Text.Trim()));
             }
             catch (Exception ex)
             {
@@ -148,26 +149,44 @@ namespace MetodosApp.Pages
             {
                 case "btn_Biseccion":
                     {
-                        DG_Data.ItemsSource = new BiseccionServices(xi, xd, tol, n).GetAllResult();
-                        ChangedVisibilityColumns();
+                        BiseccionServices a = new BiseccionServices(xi, xd, tol, n);
+                        a.NotificarPadre = Notificado;
+                        DG_Data.ItemsSource = a.GetAllResult();
+
                     }; break;
                 case "btn_ReglaFalsa":
                     {
-                        DG_Data.ItemsSource = new ReglaFalsaServices(xi, xd, tol, n).GetAllResult();
+                        ReglaFalsaServices a = new ReglaFalsaServices(xi, xd, tol, n);
+                        a.NotificarPadre = Notificado;
+
+                        DG_Data.ItemsSource = a.GetAllResult();
                     }; break;
                 case "btn_Secante":
                     {
-                        DG_Data.ItemsSource = new SecanteServices(xi, xd, tol, n).GetAllResult();
+                        SecanteServices a = new SecanteServices(xi, xd, tol, n);
+                        a.NotificarPadre = Notificado;
+
+                        DG_Data.ItemsSource = a.GetAllResult();
                     }; break;
                 case "btn_Newton":
                     {
-                        DG_Data.ItemsSource = new NewtonServices(xi, tol, n).GetAllResult();
+                        NewtonServices a = new NewtonServices(xi, tol, n);
+                        a.NotificarPadre = Notificado;
+
+                        DG_Data.ItemsSource = a.GetAllResult();
+
                     }; break;
                 default:
                     {
                         Console.WriteLine("La opcion enviada no es correcta");
                     }; break;
             }
+        }
+
+        public void Notificado(double raiz,double valor)
+        {
+            lb_Raiz.Content = $"Raiz: {raiz}";
+            lb_ValorRaiz.Content = $"Valor: {valor}";
         }
     }
 

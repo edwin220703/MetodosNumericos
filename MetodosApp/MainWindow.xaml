@@ -8,7 +8,7 @@
         Title="Metodos Numericos - Edwin - Florangel" 
         Height="450" 
         Width="800">
-    <Grid Background="#f1f6ce">
+    <Grid Background="#e5e5e5">
         <DockPanel>
             <!--NAVBAR-->
             
@@ -16,7 +16,7 @@
             <StackPanel DockPanel.Dock="Left"
                         Name="sp_SideBar"
                         Width="200"
-                        Background="#036564">
+                        Background="#212121">
 
                 <Button Name="btn_Biseccion"
                         Content="Biseccion"
@@ -46,19 +46,13 @@
 
                 </Button>
             </StackPanel>
-            
-            <!--FOOTER-->
-            <Grid DockPanel.Dock="Bottom"
-                  Height="40"
-                  Background="#036564">
-            </Grid>
-            
-            
+                        
             <!--SECTION-->
             <StackPanel DockPanel.Dock="Right"
                   Name="gd_Section">
                 <Frame Name="panel_General"
-                       NavigationUIVisibility="Hidden">
+                       NavigationUIVisibility="Hidden"
+                       Background="#e5e5e5">
 
                 </Frame>
             </StackPanel>

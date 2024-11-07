@@ -22,7 +22,7 @@ namespace MetodosApp.Models
             this.dFXI = GetValueDerivada(Xi);
 
             //FUNCION: X2 = Xi  - F(xi) / dF(Xi)
-            X2 = (Xi - FXI)/dFXI;
+            X2 = Xi - (FXI/dFXI);
         }
     }
 }

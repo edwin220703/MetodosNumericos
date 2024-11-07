@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Resource\img\" />
     <Folder Include="Windows\" />
   </ItemGroup>
 

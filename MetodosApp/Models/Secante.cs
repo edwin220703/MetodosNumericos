@@ -22,10 +22,10 @@ namespace MetodosApp.Models
             FXI = GetValueFuntion(Xi);
             FXD = GetValueFuntion(Xd);
 
-            //FORMULA: X2 = X1 - (X1-X0)(FX1)/FX1-FX0
-            //this.X2 = Xd - (((Xd - Xi) * FXD)/FXD-FXI);
+            //NOTA:USE ESTA FORMA PORQUE NO TOMABA LA FORMULA DIRECTAMENTE, HABIA QUE HACERLA POR ORDEN ATT:EDWIN
+            X2 = Xi - (FXI * (Xd - Xi)/(FXD-FXI));
 
-            X2 = Xi - ((Xd - Xi) / (FXD - FXI)) * FXD;
+
         }
     }
 }

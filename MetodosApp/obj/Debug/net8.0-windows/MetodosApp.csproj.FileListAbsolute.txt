@@ -22,3 +22,4 @@ C:\Users\edwin\source\repos\MetodosApp\MetodosApp\obj\Debug\net8.0-windows\Pages
 C:\Users\edwin\source\repos\MetodosApp\MetodosApp\obj\Debug\net8.0-windows\Pages\PanelMath.baml
 C:\Users\edwin\source\repos\MetodosApp\MetodosApp\obj\Debug\net8.0-windows\Controls\ButtonMenuStyle.baml
 C:\Users\edwin\source\repos\MetodosApp\MetodosApp\obj\Debug\net8.0-windows\App.baml
+C:\Users\edwin\source\repos\MetodosApp\MetodosApp\obj\Debug\net8.0-windows\MetodosApp.sourcelink.json

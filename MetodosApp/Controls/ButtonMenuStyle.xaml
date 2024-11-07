@@ -13,10 +13,10 @@
     <SolidColorBrush x:Key="Button.Static.Background" Color="Transparent"/>
     <SolidColorBrush x:Key="Button.Static.Border" Color="Transparent"/>
     <SolidColorBrush x:Key="Button.Static.Foreground" Color="White"/>
-    <SolidColorBrush x:Key="Button.MouseOver.Background" Color="#033649"/>
+    <SolidColorBrush x:Key="Button.MouseOver.Background" Color="#000000"/>
     <SolidColorBrush x:Key="Button.MouseOver.Border" Color="Transparent"/>
-    <SolidColorBrush x:Key="Button.Pressed.Background" Color="#033649"/>
-    <SolidColorBrush x:Key="Button.Pressed.Border" Color="#033649"/>
+    <SolidColorBrush x:Key="Button.Pressed.Background" Color="#000000"/>
+    <SolidColorBrush x:Key="Button.Pressed.Border" Color="#000000"/>
     <SolidColorBrush x:Key="Button.Disabled.Background" Color="#e8ddcb"/>
     <SolidColorBrush x:Key="Button.Disabled.Border" Color="#e8ddcb"/>
     <SolidColorBrush x:Key="Button.Disabled.Foreground" Color="#e3e3e3"/>
@@ -30,7 +30,8 @@
         <Setter Property="VerticalContentAlignment" Value="Center"/>
         <Setter Property="Padding" Value="1"/>
         <Setter Property="FontSize" Value="22"/>
-        <Setter Property="FontStyle" Value="Oblique"/>
+        <Setter Property="FontStyle" Value="Normal"/>
+        <Setter Property="FontFamily" Value="Comic Sans MS, Verdana"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Button}">
