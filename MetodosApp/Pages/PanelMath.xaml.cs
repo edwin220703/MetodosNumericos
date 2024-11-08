@@ -104,6 +104,12 @@ namespace MetodosApp.Pages
                     return false;
                 }
 
+                if (Convert.ToDouble(txt_Tol.Text) > 1)
+                {
+                    MessageBox.Show("La tolerancia debe tener un rango entre 0 y 1");
+                    return false;
+                }
+
                 //XI y XD
                 if (optionServices != "btn_Newton")
                 {

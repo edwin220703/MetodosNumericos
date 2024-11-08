@@ -20,6 +20,12 @@
 
                 <StackPanel Orientation="Vertical"
                             Margin="10,0,0,0">
+                    <Label Content=""></Label>
+                    <Label Content="Funcion: X²-3X+2ˉ˟"></Label>
+                </StackPanel>
+                
+                <StackPanel Orientation="Vertical"
+                            Margin="10,0,0,0">
                     <Label Content="Xi"></Label>
                     <TextBox Name="txt_Xi"
                              Height="30"
