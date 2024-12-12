@@ -32,6 +32,9 @@ namespace MetodosApp
                 btn_ReglaFalsa,
                 btn_Secante,
                 btn_Newton,
+                btn_GaussJordan,
+                btn_Interpolacion,
+                btn_RegressionLineal
             };
         }
 
@@ -55,7 +58,20 @@ namespace MetodosApp
                 }
 
                 //Llamando al panel para mostrarlo
-                panel_General.NavigationService.Navigate(new PanelMath(btn.Name.ToString()));
+                switch (btn.Name)
+                {
+                    case "btn_Biseccion": { panel_General.NavigationService.Navigate(new PanelMath(btn.Name.ToString())); }; break;
+                    case "btn_ReglaFalsa": { panel_General.NavigationService.Navigate(new PanelMath(btn.Name.ToString())); }; break;
+                    case "btn_Secante": { panel_General.NavigationService.Navigate(new PanelMath(btn.Name.ToString())); }; break;
+                    case "btn_Newton": { panel_General.NavigationService.Navigate(new PanelMath(btn.Name.ToString())); }; break;
+                    case "btn_GaussJordan": { panel_General.NavigationService.Navigate(new GaussJordan()); }; break;
+                    case "btn_Interpolacion": { panel_General.NavigationService.Navigate(new Interpolacion()); }; break;
+                    case "btn_RegressionLineal": { panel_General.NavigationService.Navigate(new Pages.RegressionLineal()); }; break;
+                    default:
+                        {
+                            MessageBox.Show("Esa Opcion No existe");
+                        };break;
+                }
             }
             catch (Exception ex)
             {

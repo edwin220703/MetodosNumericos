@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\edwin\source\repos\MetodosApp\MetodosApp\App.xaml
-3-1131979510
+6-1169756311
 
-1788266598
-198-556154604
-Controls\ButtonMenuStyle.xaml;MainWindow.xaml;Pages\PanelMath.xaml;
+231881108085
+198-1431420039
+Controls\ButtonMenuStyle.xaml;MainWindow.xaml;Pages\GaussJordan.xaml;Pages\Interpolacion.xaml;Pages\PanelMath.xaml;Pages\RegressionLineal.xaml;
 
-False
+True
 

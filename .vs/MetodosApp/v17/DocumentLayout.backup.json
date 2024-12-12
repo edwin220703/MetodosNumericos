@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\edwin\\source\\repos\\MetodosApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C76E1D4D-0365-4677-8249-6AF4F5137A1A}|MetodosApp\\MetodosApp.csproj|c:\\users\\edwin\\source\\repos\\metodosapp\\metodosapp\\pages\\panelmath.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C76E1D4D-0365-4677-8249-6AF4F5137A1A}|MetodosApp\\MetodosApp.csproj|solutionrelative:metodosapp\\pages\\panelmath.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C76E1D4D-0365-4677-8249-6AF4F5137A1A}|MetodosApp\\MetodosApp.csproj|c:\\users\\edwin\\source\\repos\\metodosapp\\metodosapp\\pages\\regressionlineal.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C76E1D4D-0365-4677-8249-6AF4F5137A1A}|MetodosApp\\MetodosApp.csproj|solutionrelative:metodosapp\\pages\\regressionlineal.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C76E1D4D-0365-4677-8249-6AF4F5137A1A}|MetodosApp\\MetodosApp.csproj|c:\\users\\edwin\\source\\repos\\metodosapp\\metodosapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{C76E1D4D-0365-4677-8249-6AF4F5137A1A}|MetodosApp\\MetodosApp.csproj|solutionrelative:metodosapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{C76E1D4D-0365-4677-8249-6AF4F5137A1A}|MetodosApp\\MetodosApp.csproj|c:\\users\\edwin\\source\\repos\\metodosapp\\metodosapp\\pages\\regressionlineal.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C76E1D4D-0365-4677-8249-6AF4F5137A1A}|MetodosApp\\MetodosApp.csproj|solutionrelative:metodosapp\\pages\\regressionlineal.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,26 +27,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PanelMath.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\edwin\\source\\repos\\MetodosApp\\MetodosApp\\Pages\\PanelMath.xaml.cs",
-              "RelativeDocumentMoniker": "MetodosApp\\Pages\\PanelMath.xaml.cs",
-              "ToolTip": "C:\\Users\\edwin\\source\\repos\\MetodosApp\\MetodosApp\\Pages\\PanelMath.xaml.cs",
-              "RelativeToolTip": "MetodosApp\\Pages\\PanelMath.xaml.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAAAG0AAAAhAAAAAAAAAA==",
+              "Title": "RegressionLineal.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\edwin\\source\\repos\\MetodosApp\\MetodosApp\\Pages\\RegressionLineal.xaml.cs",
+              "RelativeDocumentMoniker": "MetodosApp\\Pages\\RegressionLineal.xaml.cs",
+              "ToolTip": "C:\\Users\\edwin\\source\\repos\\MetodosApp\\MetodosApp\\Pages\\RegressionLineal.xaml.cs*",
+              "RelativeToolTip": "MetodosApp\\Pages\\RegressionLineal.xaml.cs*",
+              "ViewState": "AgIAABgAAAAAAAAAAAD4vycAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T23:37:48.061Z",
+              "WhenOpened": "2024-12-12T13:37:40.108Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\edwin\\source\\repos\\MetodosApp\\MetodosApp\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "MetodosApp\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\edwin\\source\\repos\\MetodosApp\\MetodosApp\\MainWindow.xaml",
-              "RelativeToolTip": "MetodosApp\\MainWindow.xaml",
+              "Title": "RegressionLineal.xaml",
+              "DocumentMoniker": "C:\\Users\\edwin\\source\\repos\\MetodosApp\\MetodosApp\\Pages\\RegressionLineal.xaml",
+              "RelativeDocumentMoniker": "MetodosApp\\Pages\\RegressionLineal.xaml",
+              "ToolTip": "C:\\Users\\edwin\\source\\repos\\MetodosApp\\MetodosApp\\Pages\\RegressionLineal.xaml",
+              "RelativeToolTip": "MetodosApp\\Pages\\RegressionLineal.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-07T23:25:26.385Z",
+              "WhenOpened": "2024-12-12T13:37:38.637Z",
               "EditorCaption": ""
             }
           ]

@@ -23,3 +23,9 @@ C:\Users\edwin\source\repos\MetodosApp\MetodosApp\obj\Debug\net8.0-windows\Pages
 C:\Users\edwin\source\repos\MetodosApp\MetodosApp\obj\Debug\net8.0-windows\Controls\ButtonMenuStyle.baml
 C:\Users\edwin\source\repos\MetodosApp\MetodosApp\obj\Debug\net8.0-windows\App.baml
 C:\Users\edwin\source\repos\MetodosApp\MetodosApp\obj\Debug\net8.0-windows\MetodosApp.sourcelink.json
+C:\Users\edwin\source\repos\MetodosApp\MetodosApp\obj\Debug\net8.0-windows\Pages\GaussJordan.g.cs
+C:\Users\edwin\source\repos\MetodosApp\MetodosApp\obj\Debug\net8.0-windows\Pages\Interpolacion.g.cs
+C:\Users\edwin\source\repos\MetodosApp\MetodosApp\obj\Debug\net8.0-windows\Pages\GaussJordan.baml
+C:\Users\edwin\source\repos\MetodosApp\MetodosApp\obj\Debug\net8.0-windows\Pages\Interpolacion.baml
+C:\Users\edwin\source\repos\MetodosApp\MetodosApp\obj\Debug\net8.0-windows\Pages\RegressionLineal.g.cs
+C:\Users\edwin\source\repos\MetodosApp\MetodosApp\obj\Debug\net8.0-windows\Pages\RegressionLineal.baml

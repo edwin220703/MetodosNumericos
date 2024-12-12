@@ -7,7 +7,16 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Pages\GaussJordan.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\Interpolacion.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Pages\PanelMath.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\RegressionLineal.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -18,7 +27,16 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Pages\GaussJordan.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Interpolacion.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Pages\PanelMath.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\RegressionLineal.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

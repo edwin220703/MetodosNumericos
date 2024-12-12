@@ -1,0 +1,107 @@
+﻿<Page x:Class="MetodosApp.Pages.RegressionLineal"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MetodosApp.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" 
+      d:DesignWidth="800"
+      Title="RegressionLineal">
+
+    <Grid>
+        <Grid>
+            <ScrollViewer VerticalScrollBarVisibility="Visible"
+                          ScrollViewer.CanContentScroll="False">
+                <DockPanel Name="DP_Main">
+                    <StackPanel Orientation="Horizontal"
+                            DockPanel.Dock="Top">
+                        <Label Content="X"></Label>
+                        <TextBox Name="TB_X"
+                         Width="100"
+                         Height="30">
+
+                        </TextBox>
+                        <Label Content="Y"></Label>
+                        <TextBox Name="TB_Y"
+                         Width="100"
+                         Height="30">
+
+                        </TextBox>
+                        <Button Name="BTN_Agregar"
+                            Content="Agregar"
+                            Width="100"
+                            Height="30"
+                            Margin="10,0,0,0" 
+                            Click="BTN_Agregar_Click">
+
+                        </Button>
+                        <Button Name="BTN_GaussCalcular"
+                            Content="Gauss Jordan"
+                            Width="100"
+                            Height="30"
+                            Margin="10,0,0,0" Click="BTN_GaussCalcular_Click">
+
+                        </Button>
+                    </StackPanel>
+
+                    <DataGrid Name="DG_Tabla" 
+                              AutoGenerateColumns="True"
+                              DockPanel.Dock="Top">
+                    </DataGrid>
+
+                    <StackPanel DockPanel.Dock="Top"
+                            Orientation="Vertical">
+                        <Label Content="Lineal"></Label>
+                        <Label Name="LB_ResultadoLineal"
+                           FontSize="14"
+                           Content=""
+                           Foreground="Red">
+
+                        </Label>
+
+                        <Label Content="Cuadratica"></Label>
+                        <Label Name="LB_ResultadoCuadratica"
+                            FontSize="14"
+                            Content=""
+                            Foreground="Red">
+
+                        </Label>
+
+                        <Label Content="Cubica"></Label>
+                        <Label Name="LB_ResultadoCubica"
+                            FontSize="14"
+                            Content=""
+                            Foreground="Red">
+
+                        </Label>
+                    </StackPanel>
+
+                    <!--CONTENEDOR DE GAUSS JORDAN-->
+                    <DockPanel DockPanel.Dock="Bottom">
+
+                        <Label DockPanel.Dock="Top" Content="Gauss Jordan"></Label>
+
+                        <!--LINEAL-->
+                        <Label DockPanel.Dock="Top" Content="Lineal"></Label>
+                        <WrapPanel DockPanel.Dock="Top" Name="WP_Lineal"
+                            Orientation="Horizontal">
+                        </WrapPanel>
+
+                        <!--CUADRATICO-->
+                        <Label DockPanel.Dock="Top" Content="Cuadratica"></Label>
+                        <WrapPanel DockPanel.Dock="Top" Name="WP_Cuadratica"
+                            Orientation="Horizontal">
+                        </WrapPanel>
+
+                        <!--CUBICO-->
+                        <Label DockPanel.Dock="Top" Content="Cubica"></Label>
+                        <WrapPanel DockPanel.Dock="Top" Name="WP_Cubica"
+                            Orientation="Horizontal">
+                        </WrapPanel>
+                    </DockPanel>
+                </DockPanel>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+</Page>

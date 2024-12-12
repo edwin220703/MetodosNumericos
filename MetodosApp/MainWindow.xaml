@@ -7,7 +7,9 @@
         mc:Ignorable="d"
         Title="Metodos Numericos - Edwin - Florangel" 
         Height="450" 
-        Width="800" Icon="/Companye.png">
+        Width="800" Icon="/Companye.png" 
+        ResizeMode="CanMinimize"
+        WindowState="Maximized">
     <Grid Background="#e5e5e5">
         <DockPanel>
             <!--NAVBAR-->
@@ -40,6 +42,27 @@
                 </Button>
                 <Button Name="btn_Newton"
                         Content="Newton"
+                        Height="50"
+                        Click="btn_Options_Click"
+                        Style="{DynamicResource ButtonStyle1}">
+
+                </Button>
+                <Button Name="btn_GaussJordan"
+                        Content="Gauss Jordan"
+                        Height="50"
+                        Click="btn_Options_Click"
+                        Style="{DynamicResource ButtonStyle1}">
+
+                </Button>
+                <Button Name="btn_Interpolacion"
+                        Content="Interpolacion"
+                        Height="50"
+                        Click="btn_Options_Click"
+                        Style="{DynamicResource ButtonStyle1}">
+
+                </Button>
+                <Button Name="btn_RegressionLineal"
+                        Content="Regression Lineal"
                         Height="50"
                         Click="btn_Options_Click"
                         Style="{DynamicResource ButtonStyle1}">
